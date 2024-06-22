@@ -37,9 +37,6 @@ npm run dev
 4. Adicional: Instalar Libreria para Nombre Aleatorio
 
 ```bash
-npm install faker
+npm install && npm install --save-dev @babel/preset-env @babel/preset-react @testing-library/jest-dom @testing-library/react @testing-library/user-event babel-jest eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh identity-obj-proxy jest jest-environment-jsdom jest-svg-transformer vite @vitejs/plugin-react
 ```
     
-    npm i dompurify
-    npm install --save @testing-library/react @testing-library/jest-dom jest
-    npm install --save-dev jest @testing-library/react @testing-library/jest-dom @testing-library/user-event babel-jest @babel/preset-env @babel/preset-react

@@ -27,13 +27,16 @@ test('incrementa el contador en 1 al hacer clic en el botón Contador', () => {
 
 //prueba de generación de nombre aleatorio
   describe('App component tests', () => {
+
+    // Prueba de que los estados iniciales se establecen correctamente
     test('initial states are set correctly', () => {
       render(<App />);
       expect(screen.getByText('count is 0')).toBeInTheDocument();
       expect(screen.getByText('Santiago')).toBeInTheDocument();
       // Verificar que el div de output está vacío inicialmente podría requerir acceder al DOM directamente, ya que no tiene texto visible.
     });
-  
+
+  //prueba de generación de nombre aleatorio
     test('generates and displays a random name', () => {
       const fakeName = 'John Doe';
       faker.name.findName.mockReturnValue(fakeName);
@@ -41,7 +44,8 @@ test('incrementa el contador en 1 al hacer clic en el botón Contador', () => {
       fireEvent.click(screen.getByText('Aleatorio'));
       expect(screen.getByText(fakeName)).toBeInTheDocument();
     });
-  
+
+  //prueba de actualización de nombre desde input
     test('updates name from input', () => {
       render(<App />);
       const input = screen.getByLabelText('Nombre:');
@@ -49,6 +53,7 @@ test('incrementa el contador en 1 al hacer clic en el botón Contador', () => {
       expect(screen.getByDisplayValue('Jane Doe')).toBeInTheDocument();
     });
   
+    // Prueba de que el nombre se sanitiza correctamente para prevenir ataques XSS
     test('sanitizes input to prevent XSS attacks', async () => {
       // Renderiza el componente App
       render(<App />);
@@ -70,6 +75,7 @@ test('incrementa el contador en 1 al hacer clic en el botón Contador', () => {
       // Además, puedes verificar que el contenido sanitizado no incluye el script de ninguna forma
     });
   
+    // Prueba de que el contador se incrementa al hacer clic en el botón
     test('increments count', () => {
       render(<App />);
       fireEvent.click(screen.getByText('count is 0'));
