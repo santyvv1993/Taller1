@@ -33,3 +33,10 @@ npm install
 ```bash
 npm run dev
 ```
+
+4. Adicional: Instalar Libreria para Nombre Aleatorio
+
+```bash
+npm install faker
+```
+    
