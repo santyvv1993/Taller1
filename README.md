@@ -40,3 +40,6 @@ npm run dev
 npm install faker
 ```
     
+    npm i dompurify
+    npm install --save @testing-library/react @testing-library/jest-dom jest
+    npm install --save-dev jest @testing-library/react @testing-library/jest-dom @testing-library/user-event babel-jest @babel/preset-env @babel/preset-react
