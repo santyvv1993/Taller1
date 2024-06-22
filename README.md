@@ -40,3 +40,17 @@ npm run dev
 npm install && npm install --save-dev @babel/preset-env @babel/preset-react @testing-library/jest-dom @testing-library/react @testing-library/user-event babel-jest eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh identity-obj-proxy jest jest-environment-jsdom jest-svg-transformer vite @vitejs/plugin-react
 ```
     
+5. Comando de pruebas
+
+```bash
+npm test
+```
+
+
+npm init
+
+yarn add --dev husky
+
+yarn add -D @commitlint/config-conventional @commitlint/cli
+
+npm i -g yarn
